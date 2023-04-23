@@ -1,1 +1,18 @@
+    services:
+    - name: Google 
+        url: https://google.com/
+        interval: 1m
+        conditions:
+        - "[STATUS] == 200"
 
+    - name: Github
+        url: https://github.com
+        interval: 1m
+        conditions:
+        - "[STATUS] == 200"
+        
+    - name: Cloudflare dns
+        url: https://1.1.1.1
+        interval: 1m
+        conditions:
+        - "[STATUS] == 200"
