@@ -11,8 +11,8 @@
         conditions:
         - "[STATUS] == 200"
         
-    - name: Cloudflare dns
-        url: https://1.1.1.1
+    - name: Cloudflare
+        url: "icmp://1.1.1.1"
         interval: 1m
         conditions:
-        - "[STATUS] == 200"
+        - "[CONNECTED] == true"
