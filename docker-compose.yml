@@ -6,7 +6,7 @@ services:
     ports:
       - "7070:19998"
     volumes:
-      - /dockerconf/gatus/./config.yaml:/config/config.yaml
+      - ./dockerconf/gatus/config.yaml:/config/config.yaml
     restart: always
   portainer:
     container_name: portainer
