@@ -1,12 +1,12 @@
 version: '3'
 services:
-  uptime-kuma:
-    container_name: uptime-kuma
-    image: louislam/uptime-kuma:1
+  gatus:
+    container_name: gatus
+    image: twinproduction/gatus:latest
     ports:
-      - "3001:3001"
+      - "7070:19998"
     volumes:
-      - /dockerconf/uptime-kuma:/app/data
+      - /dockerconf/gatus/config.yaml:/config/config.yaml
     restart: always
   portainer:
     container_name: portainer
